@@ -18,131 +18,42 @@
     .header-emoji { font-size: 56px; display: block; margin-bottom: 12px; }
     .header h1 { font-size: 32px; font-weight: 800; letter-spacing: 1px; color: #fff; }
     .header p { font-size: 15px; color: #888; margin-top: 6px; }
-
-    .card {
-      background: #181818;
-      border: 1px solid #2a2a2a;
-      border-radius: 18px;
-      padding: 1.25rem;
-      margin-bottom: 1rem;
-    }
-    .section-label {
-      font-size: 11px;
-      color: #777;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-      font-weight: 600;
-    }
-
-    input[type="text"], input[type="password"] {
-      width: 100%;
-      background: #222;
-      border: 1px solid #333;
-      border-radius: 10px;
-      padding: 12px 14px;
-      color: #fff;
-      font-size: 15px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
+    .card { background: #181818; border: 1px solid #2a2a2a; border-radius: 18px; padding: 1.25rem; margin-bottom: 1rem; }
+    .section-label { font-size: 11px; color: #777; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; font-weight: 600; }
+    .free-badge { display: inline-block; background: #1a3a1a; color: #4ade80; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 99px; margin-left: 8px; }
+    input[type="text"], input[type="password"] { width: 100%; background: #222; border: 1px solid #333; border-radius: 10px; padding: 12px 14px; color: #fff; font-size: 15px; outline: none; transition: border-color 0.2s; }
     input:focus { border-color: #555; }
     input::placeholder { color: #555; }
-
     .api-note { font-size: 11px; color: #555; margin-top: 6px; }
-    .api-note a { color: #e8a838; text-decoration: none; }
-
+    .api-note a { color: #4ade80; text-decoration: none; }
     .or-divider { text-align: center; color: #444; font-size: 13px; margin: 1rem 0; letter-spacing: 2px; }
-
-    .image-zone {
-      border: 2px dashed #333;
-      border-radius: 14px;
-      padding: 2.5rem;
-      text-align: center;
-      cursor: pointer;
-      transition: border-color 0.2s, background 0.2s;
-    }
+    .image-zone { border: 2px dashed #333; border-radius: 14px; padding: 2.5rem; text-align: center; cursor: pointer; transition: border-color 0.2s, background 0.2s; }
     .image-zone:hover { border-color: #555; background: #1f1f1f; }
     .image-zone.has-image { padding: 0; overflow: hidden; border-style: solid; }
     .image-zone img { width: 100%; max-height: 240px; object-fit: cover; border-radius: 12px; display: block; }
     .image-zone-icon { font-size: 36px; margin-bottom: 8px; }
     .image-zone-text { font-size: 13px; color: #666; }
-
-    .btn-recognize {
-      width: 100%;
-      padding: 15px;
-      background: #e8a838;
-      border: none;
-      border-radius: 12px;
-      font-size: 16px;
-      font-weight: 800;
-      color: #000;
-      cursor: pointer;
-      margin-top: 1rem;
-      transition: opacity 0.2s, transform 0.1s;
-      letter-spacing: 0.5px;
-    }
+    .btn-recognize { width: 100%; padding: 15px; background: #4ade80; border: none; border-radius: 12px; font-size: 16px; font-weight: 800; color: #000; cursor: pointer; margin-top: 1rem; transition: opacity 0.2s, transform 0.1s; }
     .btn-recognize:hover { opacity: 0.9; }
     .btn-recognize:active { transform: scale(0.98); }
     .btn-recognize:disabled { opacity: 0.5; cursor: not-allowed; }
-
-    .error-box {
-      background: #2a1010;
-      border: 1px solid #5a2020;
-      border-radius: 10px;
-      padding: 10px 14px;
-      font-size: 13px;
-      color: #f87171;
-      margin-top: 10px;
-      display: none;
-    }
-
+    .error-box { background: #2a1010; border: 1px solid #5a2020; border-radius: 10px; padding: 10px 14px; font-size: 13px; color: #f87171; margin-top: 10px; display: none; }
     .lang-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1rem; }
-    .lang-btn {
-      padding: 7px 16px;
-      font-size: 13px;
-      border: 1px solid #333;
-      border-radius: 99px;
-      cursor: pointer;
-      background: #181818;
-      color: #888;
-      transition: all 0.15s;
-    }
+    .lang-btn { padding: 7px 16px; font-size: 13px; border: 1px solid #333; border-radius: 99px; cursor: pointer; background: #181818; color: #888; transition: all 0.15s; }
     .lang-btn:hover { border-color: #555; color: #ccc; }
-    .lang-btn.active { border-color: #e8a838; color: #e8a838; font-weight: 700; }
-
-    .result-card {
-      background: #181818;
-      border: 1px solid #2a2a2a;
-      border-radius: 18px;
-      padding: 1.25rem;
-      display: none;
-    }
+    .lang-btn.active { border-color: #4ade80; color: #4ade80; font-weight: 700; }
+    .result-card { background: #181818; border: 1px solid #2a2a2a; border-radius: 18px; padding: 1.25rem; display: none; }
     .animal-header { display: flex; align-items: center; gap: 16px; padding-bottom: 1rem; border-bottom: 1px solid #222; margin-bottom: 1rem; }
     .animal-emoji { font-size: 60px; line-height: 1; }
     .animal-name { font-size: 24px; font-weight: 800; color: #fff; }
-    .animal-tag { font-size: 11px; color: #e8a838; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-top: 3px; }
-
+    .animal-tag { font-size: 11px; color: #4ade80; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-top: 3px; }
     .facts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 1rem; }
     .fact-card { background: #1f1f1f; border-radius: 12px; padding: 12px; border: 1px solid #252525; }
     .fact-label { font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; font-weight: 600; }
     .fact-value { font-size: 13px; color: #ccc; }
-
-    .desc-box {
-      background: #1f1f1f;
-      border-radius: 12px;
-      padding: 1rem;
-      border-left: 3px solid #e8a838;
-      border: 1px solid #252525;
-      border-left: 3px solid #e8a838;
-    }
-    .desc-label { font-size: 11px; color: #e8a838; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 8px; }
+    .desc-box { background: #1f1f1f; border-radius: 12px; padding: 1rem; border: 1px solid #252525; border-left: 3px solid #4ade80; }
+    .desc-label { font-size: 11px; color: #4ade80; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; margin-bottom: 8px; }
     .desc-text { font-size: 14px; color: #ccc; line-height: 1.8; }
-
-    @media (max-width: 480px) {
-      .header h1 { font-size: 26px; }
-      .animal-emoji { font-size: 44px; }
-    }
   </style>
 </head>
 <body>
@@ -154,17 +65,15 @@
     </div>
 
     <div class="card">
-      <div class="section-label">Klucz API Anthropic</div>
-      <input type="password" id="apiKey" placeholder="sk-ant-..." />
-      <p class="api-note">Pobierz bezpłatny klucz na <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a></p>
+      <div class="section-label">Klucz API Google Gemini <span class="free-badge">DARMOWY</span></div>
+      <input type="password" id="apiKey" placeholder="AIza..." />
+      <p class="api-note">Pobierz bezpłatny klucz na <a href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a></p>
     </div>
 
     <div class="card">
       <div class="section-label">Wpisz nazwę zwierzęcia</div>
       <input type="text" id="animalName" placeholder="np. Gepard, Orzeł, Delfin..." />
-
       <div class="or-divider">— lub —</div>
-
       <div class="section-label">Prześlij zdjęcie</div>
       <div class="image-zone" id="imageZone" onclick="document.getElementById('fileInput').click()">
         <div id="imagePlaceholder">
@@ -174,7 +83,6 @@
         <img id="previewImg" style="display:none;" alt="podgląd" />
       </div>
       <input type="file" id="fileInput" accept="image/*" style="display:none;" onchange="handleFile(event)" />
-
       <button class="btn-recognize" id="recognizeBtn" onclick="recognize()">🔍 Rozpoznaj zwierzę</button>
       <div class="error-box" id="errorBox"></div>
     </div>
@@ -195,14 +103,8 @@
         </div>
       </div>
       <div class="facts-row">
-        <div class="fact-card">
-          <div class="fact-label">🌍 Środowisko</div>
-          <div class="fact-value" id="resultHabitat"></div>
-        </div>
-        <div class="fact-card">
-          <div class="fact-label">🍽️ Dieta</div>
-          <div class="fact-value" id="resultDiet"></div>
-        </div>
+        <div class="fact-card"><div class="fact-label">🌍 Środowisko</div><div class="fact-value" id="resultHabitat"></div></div>
+        <div class="fact-card"><div class="fact-label">🍽️ Dieta</div><div class="fact-value" id="resultDiet"></div></div>
       </div>
       <div class="desc-box">
         <div class="desc-label" id="descLabel">Opis po polsku</div>
@@ -216,13 +118,7 @@
     let currentLang = 'pl';
     let imageBase64 = null;
     let imageMime = 'image/jpeg';
-
-    const langLabels = {
-      pl: 'Opis po polsku',
-      en: 'Description in English',
-      de: 'Beschreibung auf Deutsch',
-      es: 'Descripción en Español'
-    };
+    const langLabels = { pl: 'Opis po polsku', en: 'Description in English', de: 'Beschreibung auf Deutsch', es: 'Descripción en Español' };
 
     function handleFile(e) {
       const file = e.target.files[0];
@@ -264,7 +160,7 @@
       const errBox = document.getElementById('errorBox');
       errBox.style.display = 'none';
 
-      if (!apiKey) { showError('⚠️ Wpisz klucz API Anthropic.'); return; }
+      if (!apiKey) { showError('⚠️ Wpisz klucz API Google Gemini.'); return; }
       if (!name && !imageBase64) { showError('⚠️ Wpisz nazwę zwierzęcia lub wybierz zdjęcie.'); return; }
 
       const btn = document.getElementById('recognizeBtn');
@@ -273,42 +169,26 @@
       document.getElementById('resultCard').style.display = 'none';
       document.getElementById('langRow').style.display = 'none';
 
-      const systemPrompt = `Jesteś ekspertem od zoologii. Zwróć informacje w formacie JSON:
+      const prompt = `Jesteś ekspertem od zoologii. Zwróć informacje w formacie JSON (TYLKO JSON, bez markdown, bez dodatkowego tekstu):
 {"name":"nazwa po polsku","emoji":"emoji zwierzęcia","habitat":"środowisko życia (krótko)","diet":"dieta (krótko)","descriptions":{"pl":"opis po polsku (2-3 zdania)","en":"description in English (2-3 sentences)","de":"Beschreibung auf Deutsch (2-3 Sätze)","es":"descripción en español (2-3 oraciones)"}}
-Zwróć TYLKO JSON bez żadnego dodatkowego tekstu.`;
 
-      let messages;
-      if (imageBase64) {
-        messages = [{ role: 'user', content: [
-          { type: 'image', source: { type: 'base64', media_type: imageMime, data: imageBase64 } },
-          { type: 'text', text: 'Co to za zwierzę na zdjęciu? Podaj szczegółowe informacje.' }
-        ]}];
-      } else {
-        messages = [{ role: 'user', content: `Podaj informacje o zwierzęciu: ${name}` }];
-      }
+${name ? 'Podaj informacje o zwierzęciu: ' + name : 'Co to za zwierzę na zdjęciu?'}`;
+
+      let parts = imageBase64
+        ? [{ inline_data: { mime_type: imageMime, data: imageBase64 } }, { text: prompt }]
+        : [{ text: prompt }];
 
       try {
-        const res = await fetch('https://api.anthropic.com/v1/messages', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': apiKey,
-            'anthropic-version': '2023-06-01',
-            'anthropic-dangerous-direct-browser-access': 'true'
-          },
-          body: JSON.stringify({
-            model: 'claude-sonnet-4-20250514',
-            max_tokens: 1000,
-            system: systemPrompt,
-            messages
-          })
-        });
-
+        const res = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+          { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ contents: [{ parts }] }) }
+        );
         const data = await res.json();
         if (!res.ok) { showError('Błąd API: ' + (data.error?.message || res.status)); return; }
 
-        const text = data.content[0].text;
-        animalData = JSON.parse(text.replace(/```json|```/g, '').trim());
+        let text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+        text = text.replace(/```json|```/g, '').trim();
+        animalData = JSON.parse(text);
 
         document.getElementById('resultEmoji').textContent = animalData.emoji;
         document.getElementById('resultName').textContent = animalData.name;
